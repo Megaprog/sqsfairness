@@ -1,7 +1,7 @@
 {
   "name": "sqsfairness",
   "version": "1.0.0",
-  "description": "My Remotion video",
+  "description": "Browser-playable Remotion animation explaining Amazon SQS fair queues",
   "repository": {},
   "license": "UNLICENSED",
   "engines": {
@@ -10,6 +10,7 @@
   "private": true,
   "dependencies": {
     "@remotion/cli": "4.0.539",
+    "@remotion/player": "4.0.539",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.539"
@@ -20,11 +21,14 @@
     "@types/web": "0.0.166",
     "eslint": "10.12.0",
     "prettier": "3.8.1",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "vite": "8.3.5"
   },
   "scripts": {
     "dev": "remotion studio",
+    "dev:player": "vite --config vite.config.mts",
     "build": "remotion bundle",
+    "build:player": "vite build --config vite.config.mts",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc"
   },
