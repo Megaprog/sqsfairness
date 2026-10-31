@@ -12,16 +12,28 @@ A 25-second Remotion animation explaining how Amazon SQS fair queues help reduce
 
 The narration appears as on-screen text. The animation does not include a spoken voice track.
 
-## Preview
+## Browser player
 
-Install dependencies and start Remotion Studio:
+Install dependencies and run the browser player locally:
 
 ```sh
 npm install
-npm run dev
+npm run dev:player
 ```
 
-Open the `NoisyNeighborPrototype` composition in Studio to preview the animation in a browser.
+The player runs the composition in the browser with no MP4. Use `npm run dev` to open Remotion Studio and edit the animation.
+
+## Publish on GitHub Pages
+
+The `Deploy player to GitHub Pages` workflow builds a static player page from the React composition and deploys it when changes are pushed to `main`. To enable the first deployment, open **Settings → Pages** and set the source to **GitHub Actions**. The published player does not require Node.js on viewers' devices.
+
+For a local production build, run:
+
+```sh
+npm run build:player
+```
+
+The build output is written to `dist/`, which is Git-ignored.
 
 ## Render an MP4
 
