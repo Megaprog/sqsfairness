@@ -29,7 +29,7 @@ Open the `NoisyNeighborPrototype` composition in Studio to preview the animation
 npx remotion render src/index.ts NoisyNeighborPrototype out/sqs-fair-queues.mp4
 ```
 
-The current rendered video is [`out/sqs-fair-queues.mp4`](out/sqs-fair-queues.mp4).
+The MP4 is generated locally in `out/sqs-fair-queues.mp4`. The `out/` directory is ignored by Git, so the rendered video is not included in this repository.
 
 ## Reference
 
