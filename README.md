@@ -2,6 +2,8 @@
 
 A 25-second Remotion animation explaining how Amazon SQS fair queues help reduce the impact of a noisy tenant on other tenants sharing a standard queue. The 1280×720 schematic uses color-coded tenant messages, animated queue movement, and dwell-time indicators.
 
+▶ **[Watch the animation](https://megaprog.github.io/sqsfairness/)**
+
 ## Scenes
 
 | Time | Scene | On-screen narration |
